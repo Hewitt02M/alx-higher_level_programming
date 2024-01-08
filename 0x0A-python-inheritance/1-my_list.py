@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-'''
-class MyList that inherits from list
-Public instance method print_sorted(), that prints the list
-'''
 
 
 class MyList(list):
-
+    """extended version of list
+    """
     def print_sorted(self):
-        self.sort()
-        print(self)
+        """prints the list in ascending order
+        """
+        copy = self[:]
+        copy.sort()
+        print(copy)
